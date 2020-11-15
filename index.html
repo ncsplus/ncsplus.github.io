@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NCSPlus</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<link href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+		integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+
+	<!-- MDUI JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+		integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/ncsplus.css" />
+</head>
+
+<body id="body" class="mdui-loaded mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-teal"
+	ondragstart="return false;">
+	<!--工具栏-->
+	<header class="mdui-appbar fcui-appbar-banner mdui-color-theme mdui-appbar-fixed mdui-shadow-0" id="mainappbar">
+		<div class="mdui-toolbar"> <span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white"
+				mdui-drawer="{target: '#main-drawer', swipe: true,overlay:true}">
+				<i class="mdui-icon material-icons">menu</i></span><a href="../"
+				class="mdui-typo-headline mdui-hidden-xs">灵工艺+</a>
+			<a class="mdui-typo-title">NCS.Plus</a>
+			<div class="mdui-toolbar-spacer"></div>
+			<a href="https://github.com/ncsplus" target="_blank"
+				class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-tooltip="{content: 'Github'}">
+				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36"
+					enable-background="new 0 0 36 36" xml:space="preserve" class="mdui-icon"
+					style="width: 24px;height:24px;">
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M18,1.4C9,1.4,1.7,8.7,1.7,17.7c0,7.2,4.7,13.3,11.1,15.5
+			  c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1
+			  c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4
+			  c-0.2-0.4-0.7-2.1,0.2-4.3c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7
+			  c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5
+			  c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C34.3,8.7,27,1.4,18,1.4z"></path>
+				</svg>
+			</a>
+		</div>
+	</header>
+	<!--面板-->
+	<div class="type-ncsplus">
+		<div class="mdui-container main-container">
+			<div class="section-title container ml-auto mr-auto" id="codencsplus">
+				<h1 class="text-center text-white"><span class="typed-text"></span><span class="cursor"> </span></h1>
+			</div>
+		</div>
+	</div>
+	<div class="mdui-tab mdui-color-theme fcui-color fcui-shadow-down-2" mdui-tab>
+		<a href="#home">主页导航</a>
+		<a href="#nullcraft">灵工艺社区</a>
+		<a href="#fgpai">复古派科技</a>
+	</div>
+
+	<!--菜单-->
+	<div class="mdui-drawer mdui-drawer-close mdui-color-white mdui-drawer-full-height" id="main-drawer">
+		<div class="fcui-listtitle">
+			快捷导航
+		</div>
+		<ul class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+			<a href="/" class="mdui-list-item mdui-ripple mdui-list-item-active">
+				<i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+				<div class="mdui-list-item-content">首页</div>
+			</a>
+		</ul>
+	</div>
+
+
+	<div class="mdui-container-fluid" id="home">
+		<h3>快辰信息</h3>
+		<div class="mdui-row">
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/fastchen.png">
+						<div class="mdui-card-header-title">快辰 FastChen</div>
+						<div class="mdui-card-header-subtitle">以平常之心，做非凡之事。</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://fastchen.com" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/github.png">
+						<div class="mdui-card-header-title">FastChen Github</div>
+						<div class="mdui-card-header-subtitle">分享是一种美德，开源是一种气度</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://github.com/FastChen" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<h3>由快辰创立工作室</h3>
+		<div class="mdui-row">
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/nullcraft.png">
+						<div class="mdui-card-header-title">灵工艺社区</div>
+						<div class="mdui-card-header-subtitle">主要发布免费软件提供便捷使用</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/fgpai.png">
+						<div class="mdui-card-header-title">复古派科技</div>
+						<div class="mdui-card-header-subtitle">主要制作本人熟练软件使用教程视频</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://fgpai.com" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/mcres.png">
+						<div class="mdui-card-header-title">灵工艺Minecraft资源 MCRes.net</div>
+						<div class="mdui-card-header-subtitle">搜集与发布官方、镜像下资源提供便捷资源下载</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://mcres.net" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>本站信息</h3>
+		<div class="mdui-row">
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/favicon.png">
+						<div class="mdui-card-header-title">灵工艺+ NCS.PLUS</div>
+						<div class="mdui-card-header-subtitle">集合快辰所创立与制作的所以东西，快捷导航</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" style="background-color: dimgray;border-radius: 50%;">
+						<div class="mdui-card-header-title">MDUI</div>
+						<div class="mdui-card-header-subtitle">MDUI 漂亮、轻量且好用，它能让你更轻松地开发 Material Design 网页应用
+						</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://mdui.org" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="mdui-container-fluid" id="nullcraft">
+		<h3>已发布软件</h3>
+		<div class="mdui-row">
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/nullcraft/minecraftserverlite.png">
+						<div class="mdui-card-header-title">灵工艺我的世界「轻」开服器</div>
+						<div class="mdui-card-header-subtitle">NullCraft Minecraft Server Lite</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/3" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/nullcraft/minecraftserverpro.png">
+						<div class="mdui-card-header-title">灵工艺我的世界开服器Pro</div>
+						<div class="mdui-card-header-subtitle">NullCraft Minecraft Server Pro</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/4" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/nullcraft/unturnedserverpro.png">
+						<div class="mdui-card-header-title">灵工艺未转变者开服器Pro</div>
+						<div class="mdui-card-header-subtitle">NullCraft Unturned Server Pro</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/5" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/nullcraft/minecraftmodsupdater.png">
+						<div class="mdui-card-header-title">灵工艺我的世界模组更新器</div>
+						<div class="mdui-card-header-subtitle">NullCraft Minecraft Mods Updater</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/6" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/nullcraft/minecraftskinviewer.png">
+						<div class="mdui-card-header-title">灵工艺我的世界皮肤查看器</div>
+						<div class="mdui-card-header-subtitle">NullCraft Minecraft Skin Viewer</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/7" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/nullcraft.png">
+						<div class="mdui-card-header-title">PHP Minecraft Skin</div>
+						<div class="mdui-card-header-subtitle">[开源] Github</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/8" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/nullcraft.png">
+						<div class="mdui-card-header-title">灵工艺哈希</div>
+						<div class="mdui-card-header-subtitle">NullCraft Hash</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/11" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h3>已发布插件</h3>
+		<div class="mdui-row">
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/nullcraft.png">
+						<div class="mdui-card-header-title">NcRules — 快速管理所有世界规则</div>
+						<div class="mdui-card-header-subtitle">[原创][管理][其他][1.12-1.16]</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/9" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/nullcraft/coolq.png">
+						<div class="mdui-card-header-title">[灵工艺] 酷Q插件系列集合</div>
+						<div class="mdui-card-header-subtitle">适用于Mirai、先驱 [DLL与JSON打包]</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://nullcraft.org/d/10" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">remove_red_eye</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mdui-container-fluid" id="fgpai">
+		<h3>专题频道</h3>
+		<div class="mdui-row">
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" src="img/logo/bilibili.png">
+						<div class="mdui-card-header-title">BiliBili 频道</div>
+						<div class="mdui-card-header-subtitle">BiliBili</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon" href="https://space.bilibili.com/27791510" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" style="background-color: dimgray;border-radius: 50%;">
+						<div class="mdui-card-header-title">【两分钟玩转Pr】</div>
+						<div class="mdui-card-header-subtitle">BiliBili</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon"
+								href="https://space.bilibili.com/27791510/channel/detail?cid=70727" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" style="background-color: dimgray;border-radius: 50%;">
+						<div class="mdui-card-header-title">【Pr进阶教程】</div>
+						<div class="mdui-card-header-subtitle">BiliBili</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon"
+								href="https://space.bilibili.com/27791510/channel/detail?cid=79135" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-4">
+				<div class="mdui-card mdui-m-b-2">
+					<div class="mdui-card-header">
+						<img class="mdui-card-header-avatar" style="background-color: dimgray;border-radius: 50%;">
+						<div class="mdui-card-header-title">【五分钟CSS效果】</div>
+						<div class="mdui-card-header-subtitle">BiliBili</div>
+						<div class="mdui-card-menu">
+							<a class="mdui-btn mdui-btn-icon"
+								href="https://space.bilibili.com/27791510/channel/detail?cid=93579" target="_blank"
+								style="margin-top: 1px;">
+								<i class="mdui-icon material-icons">insert_link</i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<footer class="mdui-m-t-2" style="background-color: #363636;text-align: center;">
+		<div class="mdui-typo mdui-text-color-white mdui-p-a-3">
+			<p>Copyright © 2016-2020 <a href="https://fastchen.com" target="_blank">快辰 FastChen</a> All rights
+				reserved.</p>
+		</div>
+	</footer>
+	<script>
+		window.onscroll = function () { //绑定scroll事件
+			var t = document.documentElement.scrollTop || document.body.scrollTop; //获取滚动距离
+			if (t >= 140) { //判断
+				document.getElementById("mainappbar").classList.remove("mdui-shadow-0");
+			} else {
+				document.getElementById("mainappbar").classList.add("mdui-shadow-0");
+			}
+		}
+		const typedTextSpan = document.querySelector(".typed-text");
+		const cursorSpan = document.querySelector(".cursor");
+
+		const textArray = ["灵工艺+", "快辰项目集合页"];
+		const typingSpeed = 200;
+		const erasingSpeed = 100;
+		const newTextDelay = 2000;
+		let textArrayIndex = 0;
+		let charIndex = 0;
+
+		function type() {
+			if (charIndex < textArray[textArrayIndex].length) {
+				if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+				typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+				charIndex++;
+				setTimeout(type, typingSpeed);
+			}
+			else {
+				cursorSpan.classList.remove("typing");
+				setTimeout(erase, newTextDelay);
+			}
+		}
+
+		function erase() {
+			if (charIndex > 0) {
+				if (!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+				typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+				charIndex--;
+				setTimeout(erase, erasingSpeed);
+			}
+			else {
+				cursorSpan.classList.remove("typing");
+				textArrayIndex++;
+				if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+				setTimeout(type, typingSpeed + 1100);
+			}
+		}
+		document.addEventListener("DOMContentLoaded", function () { // On DOM Load initiate the effect
+			setTimeout(type, newTextDelay + 250);
+		});
+
+		console.log("%c███╗   ██╗ ██████╗███████╗   ██████╗ ██╗     ██╗   ██╗███████╗\n████╗  ██║██╔════╝██╔════╝   ██╔══██╗██║     ██║   ██║██╔════╝\n██╔██╗ ██║██║     ███████╗   ██████╔╝██║     ██║   ██║███████╗\n██║╚██╗██║██║     ╚════██║   ██╔═══╝ ██║     ██║   ██║╚════██║\n██║ ╚████║╚██████╗███████║██╗██║     ███████╗╚██████╔╝███████║\n╚═╝  ╚═══╝ ╚═════╝╚══════╝╚═╝╚═╝     ╚══════╝ ╚═════╝ ╚══════╝", "color:#2DCEB1");
+		console.log("%c Copyright %c", "background:#2DCEB1; color:#ffffff", "", "快辰 FastChen");
+		console.info("%c恭喜你发现彩蛋,如果你有有趣的想法,欢迎加入我们:https://jq.qq.com/?_wv=1027&k=rA6u76Qo", "color:#2DCEB1;font-weight:bold");
+	</script>
+</body>
+
+</html>

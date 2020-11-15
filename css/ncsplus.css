@@ -1,0 +1,107 @@
+.mdui-theme-primary-blue .mdui-color-theme {
+  color: #fff !important;
+  background-color: #2196f3 !important;
+}
+.mdui-theme-accent-blue .mdui-color-theme-accent {
+	color: #fff !important;
+	background-color: #3698DB !important;
+}
+.mdui-theme-primary-blue .mdui-text-color-theme {
+	color: #3698DB !important;
+}
+
+.mdui-container-fluid {
+	width: 98%;
+}
+
+.mdui-list-item-avatar {
+    background-color: transparent;
+}
+
+.mdui-list-item-avatar img {
+    border-radius: 0px;
+}
+
+.mdui-card-header-avatar {
+    border-radius: 5px;
+}
+
+.mdui-card-header-subtitle {
+    width: 74%;
+}
+
+.mdui-card:hover {
+	cursor:pointer;
+	box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12) !important;
+    -webkit-box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12) !important;
+}
+
+
+.fcui-color{background:linear-gradient(270deg,#2BA79C,#009688);}
+
+.fcui-appbar-banner {
+    background-image: -webkit-gradient(linear,right top,left top,from(#2BA79C),to(#009688));
+    background-image: linear-gradient(270deg,#2BA79C,#009688);
+}
+.fcui-shadow-down-2{
+    -webkit-box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14);
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14);
+}
+.fcui-listtitle{background:linear-gradient(270deg,#2BA79C,#009688);color:#FAFAFA;font-size:24px;font-weight:700;line-height:32px;padding:20px 24px 19px}
+
+.type-ncsplus {
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	color: #fff;
+  	background-image: -webkit-gradient(linear,right top,left top,from(#2BA79C),to(#009688));
+  	background-image: linear-gradient(270deg,#2BA79C,#009688);
+}
+.type-ncsplus h1 {
+	font-size: 3rem;
+	padding: 0.5rem;
+	font-weight: normal;
+	letter-spacing: 0.1rem;
+	text-align: center;
+	overflow: hidden;
+}
+.type-ncsplus h1 span.typed-text {
+	font-weight: bold;
+}
+.type-ncsplus h1 span.cursor {
+	display: inline-block;
+	background-color: #ccc;
+	margin-left: 0.1rem;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+.type-ncsplus h1 span.cursor.typing {
+	animation: none;
+}
+@keyframes blink {
+	0%  { background-color: #ccc; }
+	49% { background-color: #ccc; }
+	50% { background-color: transparent; }
+	99% { background-color: transparent; }
+	100%  { background-color: #ccc; }
+}
+@media (max-width:850px) {
+	.type-ncsplus {
+		height: 10vh;
+	}
+	.type-ncsplus h1 {
+		font-size: 1.8rem;
+	}
+	.icons-example .icons-example-wrapper {
+		min-width: 100%
+	}
+}
+
+.infospan-ncsplus{
+  	color: #929292;
+	margin-left: 14px;
+	font-size: 18px;
+	float: left;
+	line-height: 20px;
+}
